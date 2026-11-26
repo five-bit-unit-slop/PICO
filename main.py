@@ -1,7 +1,7 @@
-from machine import Pin, ADC
-import utime
+from machine import Pin, ADC # pyright: ignore[reportMissingImports]
+import utime # pyright: ignore[reportMissingImports]
 import json
-from wifi_driver import connect_wifi, send_data
+from drivers.wifi_driver import connect_wifi, send_data
 
 ldr = ADC(Pin(26))
 draaiknop = ADC(Pin(27))

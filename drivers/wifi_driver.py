@@ -1,4 +1,4 @@
-import network
+import network # pyright: ignore[reportMissingImports]
 import socket
 import time
 import json
